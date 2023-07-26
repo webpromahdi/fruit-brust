@@ -43,7 +43,7 @@
     </style>
   </head>
   <body>
-    <header class="lg:max-w-[86%] max-lg:max-w-[96%] m-auto h-screen">
+    <header class="lg:max-w-[86%] max-lg:max-w-[96%] m-auto h-[90vh] max-md:h-[50vh]">
       <!-- navication menu -->
       <nav>
         <!-- large device navbar -->
@@ -149,5 +149,203 @@
         </div>
       </section>
     </header>
+
+    <main class="lg:max-w-[86%] max-lg:max-w-[96%] m-auto">
+      <!-- deal section -->
+      <section>
+        <div class="flex max-md:flex-col justify-between items-center mt-20">
+          <!-- deal content -->
+          <div class="max-w-2xl max-md:max-w-sm pr-16 max-md:pr-0 max-md:text-center max-md:mb-6">
+            <h3 class="text-5xl max-md:text-xl font-bold mb-3">Deal of the day</h3>
+            <p class="text-base max-md:text-sm font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <!-- countdown -->
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown text-5xl max-md:text-2xl font-bold mb-1">
+                <span style="--value:29;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown text-5xl max-md:text-2xl font-bold mb-1">
+                <span style="--value:15;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown text-5xl max-md:text-2xl font-bold mb-1">
+                <span style="--value:25;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown text-5xl max-md:text-2xl font-bold mb-1">
+                <span style="--value:08;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+  
+        <!-- fruits container -->
+        <div class="mt-8 flex flex-wrap justify-between items-center max-md:grid grid-cols-2 gap-x-2 max-sm:grid-cols-1">
+          <!-- fluit 1 -->
+          <div class="flex flex-col justify-center items-center border border-gray-300 rounded-lg px-16 py-8">
+            <img class="mb-6" src="./images/fruit6.png">
+            <h4 class=" border-[#1212121A] border-b pb-4 text-2xl font-bold mb-4">12.90$ - 18.85$</h4>
+            <p class="mt-6 mb-3 text-[#424141] text-base font-medium">Apples</p>
+            <div class="rating space-x-2 text-2xl">
+              <i class="fa-solid fa-star primary-color"></i>
+              <i class="fa-solid fa-star-half-stroke primary-color"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+            </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="primary-color mt-4 font-bold" onclick="my_modal_5.showModal()">Details</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-6" src="./images/fruit6.png">
+                      </div>
+                      <h3 class="font-extrabold text-4xl max-md:text-2xl text-center">Apples</h3>
+                      <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      <div class="rating space-x-2 text-2xl flex justify-center items-center">
+                        <i class="fa-solid fa-star primary-color"></i>
+                        <i class="fa-solid fa-star-half-stroke primary-color"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                      </div>
+                      <div class="modal-action flex justify-center items-center space-x-3">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border border-[#F85559] primary-color">Close</button>
+                        <button class="btn bg-primary-color hover:bg-[#b24345] border-[#F85559] text-white">Buy Now</button>
+                      </div>
+                  </form>
+                </dialog>
+          </div>
+  
+          <!-- fluit 2 -->
+          <div class="flex flex-col justify-center items-center border border-gray-300 rounded-lg px-16 py-8">
+            <img class="mb-6" src="./images/fruit7.png">
+            <h4 class=" border-[#1212121A] border-b pb-4 text-2xl font-bold mb-4">12.90$ - 18.85$</h4>
+            <p class="mt-6 mb-3 text-[#424141] text-base font-medium">Orange</p>
+            <div class="rating space-x-2 text-2xl">
+              <i class="fa-solid fa-star primary-color"></i>
+              <i class="fa-solid fa-star-half-stroke primary-color"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+            </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="primary-color mt-4 font-bold" onclick="my_modal_6.showModal()">Details</button>
+                <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-6" src="./images/fruit7.png">
+                      </div>
+                      <h3 class="font-extrabold text-4xl max-md:text-2xl text-center">Orange</h3>
+                      <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      <div class="rating space-x-2 text-2xl flex justify-center items-center">
+                        <i class="fa-solid fa-star primary-color"></i>
+                        <i class="fa-solid fa-star-half-stroke primary-color"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                      </div>
+                      <div class="modal-action flex justify-center items-center space-x-3">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border border-[#F85559] primary-color">Close</button>
+                        <button class="btn bg-primary-color hover:bg-[#b24345] border-[#F85559] text-white">Buy Now</button>
+                      </div>
+                  </form>
+                </dialog>
+          </div>
+  
+          <!-- fluit 3 -->
+          <div class="flex flex-col justify-center items-center border border-gray-300 rounded-lg px-16 py-8">
+            <img class="mb-6" src="./images/fruit8.png">
+            <h4 class=" border-[#1212121A] border-b pb-4 text-2xl font-bold mb-4">12.90$ - 18.85$</h4>
+            <p class="mt-6 mb-3 text-[#424141] text-base font-medium">Red Dragon</p>
+            <div class="rating space-x-2 text-2xl">
+              <i class="fa-solid fa-star primary-color"></i>
+              <i class="fa-solid fa-star-half-stroke primary-color"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+            </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="primary-color mt-4 font-bold" onclick="my_modal_7.showModal()">Details</button>
+                <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-6" src="./images/fruit8.png">
+                      </div>
+                      <h3 class="font-extrabold text-4xl max-md:text-2xl text-center">Red Dragon</h3>
+                      <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      <div class="rating space-x-2 text-2xl flex justify-center items-center">
+                        <i class="fa-solid fa-star primary-color"></i>
+                        <i class="fa-solid fa-star-half-stroke primary-color"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                      </div>
+                      <div class="modal-action flex justify-center items-center space-x-3">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border border-[#F85559] primary-color">Close</button>
+                        <button class="btn bg-primary-color hover:bg-[#b24345] border-[#F85559] text-white">Buy Now</button>
+                      </div>
+                  </form>
+                </dialog>
+          </div>
+  
+          <!-- fluit 4 -->
+          <div class="flex flex-col justify-center items-center border border-gray-300 rounded-lg px-16 py-8">
+            <img class="mb-6" src="./images/fruit9.png">
+            <h4 class=" border-[#1212121A] border-b pb-4 text-2xl font-bold mb-4">12.90$ - 18.85$</h4>
+            <p class="mt-6 mb-3 text-[#424141] text-base font-medium">Banana</p>
+            <div class="rating space-x-2 text-2xl">
+              <i class="fa-solid fa-star primary-color"></i>
+              <i class="fa-solid fa-star-half-stroke primary-color"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+            </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="primary-color mt-4 font-bold" onclick="my_modal_8.showModal()">Details</button>
+                <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                  <form method="dialog" class="modal-box">
+                    <div class="flex justify-center items-center">
+                        <img class="mb-6" src="./images/fruit9.png">
+                      </div>
+                      <h3 class="font-extrabold text-4xl max-md:text-2xl text-center">Banana</h3>
+                      <p class="py-4 text-center">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      <div class="rating space-x-2 text-2xl flex justify-center items-center">
+                        <i class="fa-solid fa-star primary-color"></i>
+                        <i class="fa-solid fa-star-half-stroke primary-color"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                      </div>
+                      <div class="modal-action flex justify-center items-center space-x-3">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn bg-white border border-[#F85559] primary-color">Close</button>
+                        <button class="btn bg-primary-color hover:bg-[#b24345] border-[#F85559] text-white">Buy Now</button>
+                      </div>
+                  </form>
+                </dialog>
+          </div>     
+        </div>
+        <!-- shop all button -->
+        <div class="flex justify-center mt-10">
+          <button class="btn bg-primary-color hover:bg-[#b24345] border-[#F85559] text-white">Shop All</button>
+        </div> 
+      </section>
+
+      <!-- meet the team section -->
+
+    </main>
   </body>
 </html>
